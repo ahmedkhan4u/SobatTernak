@@ -15,7 +15,7 @@ import static com.softrasol.ternaksukses.R.color;
 import static com.softrasol.ternaksukses.R.drawable;
 
 public class OnBoardingActivity extends AhoyOnboarderActivity {
-
+//..............
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
