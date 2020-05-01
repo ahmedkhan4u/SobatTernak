@@ -1,0 +1,80 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softrasol.ternaksukses.Fragments.AllShopFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_outline"
+            android:padding="12dp"
+            android:hint="Search by name"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/ic_search"
+            android:textColor="@color/text_Color"
+            android:textSize="14sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Categories"
+                android:fontFamily="@font/radomir_tinkov_gilroy_bold"
+                android:textColor="@color/text_Color"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="@color/text_Color"
+                android:textSize="12sp"
+                android:fontFamily="@font/radomir_tinkov_gilroy_medium"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview_shop_all_categories"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Products"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/radomir_tinkov_gilroy_bold"
+            android:textColor="@color/text_Color"
+            android:textSize="14sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview_shop_new_products"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="70dp"
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

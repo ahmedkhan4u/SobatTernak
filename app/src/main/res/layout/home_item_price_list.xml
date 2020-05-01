@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#FAF0EA"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home"
+            android:layout_margin="8dp"
+            android:id="@+id/img_home_item_price"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$18"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FF9800"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/radomir_tinkov_gilroy_bold"
+        android:textSize="14sp"
+        android:id="@+id/txt_home_item_price"
+        />
+
+
+</LinearLayout>

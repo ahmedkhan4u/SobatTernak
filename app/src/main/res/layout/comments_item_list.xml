@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/profile_image"
+                android:id="@+id/img_details_product_comment_profile"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/img_details_product_comment_profile"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_Color"
+                    android:text="Martin Paimer"
+                    android:fontFamily="@font/radomir_tinkov_gilroy_bold"
+                    android:textSize="16sp"
+                    android:id="@+id/txt_details_porduct_comment_name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_Color"
+                    android:text="Just Now"
+                    android:layout_marginTop="8dp"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/radomir_tinkov_gilroy_regular"
+                    android:id="@+id/txt_details_porduct_comment_time"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum is a dummy text Assuming you use LinearLayoutManager in your RecyclerView, then you can pass true as third"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/text_Color"
+            android:id="@+id/txt_details_porduct_comment_message"
+            android:fontFamily="@font/radomir_tinkov_gilroy_bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greyColor"
+                android:text="3 Likes"
+                android:textSize="12sp"
+                android:fontFamily="@font/radomir_tinkov_gilroy_medium"
+                android:id="@+id/txt_details_product_comment_likes"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greyColor"
+                android:fontFamily="@font/radomir_tinkov_gilroy_medium"
+                android:text="Reply"
+                android:layout_marginStart="16dp"
+                android:textSize="12sp"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_Color"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

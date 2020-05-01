@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9733EE</color>
+    <color name="colorPrimaryDark">#952BF1</color>
+    <color name="colorAccent">#926AD6</color>
+    <color name="purpleColor">#9733EE</color>
+    <color name="endColor">#DA20FF</color>
+    <color name="text_Color">#4E4E4E</color>
+    <color name="view_Color">#E7E7E7</color>
+    <color name="itemPriceColor">#293DA9</color>
+    <color name="pinkColor">#E6FF6CC6</color>
+    <color name="greyColor">#8B8B8B</color>
+
+</resources>

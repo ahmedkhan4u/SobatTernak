@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/profile_image"
+                android:id="@+id/img_home_post_profile"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/img_home_post_profile"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="50dp"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_Color"
+                    android:text="Martin Paimer"
+                    android:fontFamily="@font/radomir_tinkov_gilroy_bold"
+                    android:textSize="16sp"
+                    android:id="@+id/txt_home_post_profile_name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/greyColor"
+                    android:text="Just Now"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/radomir_tinkov_gilroy_light"
+                    android:textSize="12sp"
+                    android:id="@+id/txt_home_post_time"
+                    />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_menu_dots"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/btn_home_post_menu_dots"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum is a dummy text Assuming you use LinearLayoutManager in your RecyclerView, then you can pass true as third"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/text_Color"
+            android:id="@+id/txt_home_post_description"
+            android:fontFamily="@font/radomir_tinkov_gilroy_regular"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/hewan"
+                android:scaleType="fitXY"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                    <ImageButton
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:background="@drawable/ic_comment"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment"
+                        android:textColor="@color/greyColor"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/radomir_tinkov_gilroy_regular"
+                        android:gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:drawablePadding="8dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/ic_like"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Like"
+                        android:textColor="@color/greyColor"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/radomir_tinkov_gilroy_regular"
+                        android:gravity="center"
+                        android:drawablePadding="8dp"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="4dp"
+                    >
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/ic_share"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textColor="@color/greyColor"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/radomir_tinkov_gilroy_regular"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_Color"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="20dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
