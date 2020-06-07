@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#952BF1</color>
     <color name="colorAccent">#926AD6</color>
     <color name="purpleColor">#9733EE</color>
-    <color name="endColor">#DA20FF</color>
+    <color name="end_Color">#DA20FF</color>
     <color name="text_Color">#4E4E4E</color>
     <color name="view_Color">#E7E7E7</color>
     <color name="itemPriceColor">#293DA9</color>
